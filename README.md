@@ -62,7 +62,7 @@ func Fac.ComputeFac(this num)
 In this phase, we translate the Vapor language to the Vapor-M language. In contrast to Vapor that provides local variables, Vapor-M provides registers and stacks. The local variables should be mapped to registers and run-time stack elements.
 
 ### Example
-####Vapor Program:
+Vapor Program:
 const vmt_Fac
   :Fac.ComputeFac
 
@@ -92,7 +92,7 @@ func Fac.ComputeFac(this num)
   if1_end:
   ret num_aux
   
-####The Resulting Vapor-M Program:
+The Resulting Vapor-M Program:
   const vmt_Fac
   :Fac.ComputeFac
 
