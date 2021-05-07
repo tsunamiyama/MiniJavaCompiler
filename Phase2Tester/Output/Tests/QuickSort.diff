@@ -1,0 +1,30 @@
+--- SelfTestCases/QuickSort.out	2011-04-28 14:55:20.000000000 -0700
++++ ./Output/Tests/QuickSort.out	2021-02-13 18:30:53.342310300 -0800
+@@ -1,22 +1,5 @@
+-20
+-7
+-12
+-18
+-2
+-11
+-6
+-9
+-19
+-5
+-9999
+-2
+-5
+-6
+-7
+-9
+-11
+-12
+-18
+-19
+-20
+-0
++--- Error (ProgramFault) ---
++use of uinitialized value
++  Main() line 18
++  QS.Start(<Heap.0>+0 10) line 32
++  QS.Init(<Heap.0>+0 10) line 476
