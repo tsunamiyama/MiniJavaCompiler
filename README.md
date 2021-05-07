@@ -11,6 +11,7 @@ In this phase, we translate programs in the MiniJava language to programs in the
 
 ### Example
 MiniJava Program:
+
 class Factorial{
    public static void main(String[] a){
       System.out.println(new Fac().ComputeFac(10));
@@ -29,6 +30,7 @@ class Fac {
 }
 
 The Resulting Vapor Program:
+
 const vmt_Fac
   :Fac.ComputeFac
 
@@ -63,6 +65,7 @@ In this phase, we translate the Vapor language to the Vapor-M language. In contr
 
 ### Example
 Vapor Program:
+
 const vmt_Fac
   :Fac.ComputeFac
 
@@ -93,6 +96,7 @@ func Fac.ComputeFac(this num)
   ret num_aux
   
 The Resulting Vapor-M Program:
+
   const vmt_Fac
   :Fac.ComputeFac
 
@@ -132,3 +136,4 @@ if1_end:
   $v0 = $t1
   $s0 = local[0]
   ret
+
