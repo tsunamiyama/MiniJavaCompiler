@@ -1,0 +1,5 @@
+--- Error (ProgramFault) ---
+use of uinitialized value
+  Main() line 18
+  LS.Start(<Heap.0>+0 10) line 32
+  LS.Init(<Heap.0>+0 10) line 271

@@ -1,0 +1,30 @@
+--- SelfTestCases/BubbleSort.out	2011-04-28 14:55:20.000000000 -0700
++++ ./Output/Tests/BubbleSort.out	2021-02-13 18:30:50.120287100 -0800
+@@ -1,22 +1,5 @@
+-20
+-7
+-12
+-18
+-2
+-11
+-6
+-9
+-19
+-5
+-99999
+-2
+-5
+-6
+-7
+-9
+-11
+-12
+-18
+-19
+-20
+-0
++--- Error (ProgramFault) ---
++use of uinitialized value
++  Main() line 18
++  BBS.Start(<Heap.0>+0 10) line 32
++  BBS.Init(<Heap.0>+0 10) line 290

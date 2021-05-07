@@ -1,0 +1,71 @@
+const vmt_LL
+	:LL.Start
+
+const vmt_Element
+	:Element.Init
+	:Element.GetAge
+	:Element.GetSalary
+	:Element.GetMarried
+	:Element.Equal
+	:Element.Compare
+
+const vmt_List
+	:List.Init
+	:List.InitNew
+	:List.Insert
+	:List.SetNext
+	:List.Delete
+	:List.Search
+	:List.GetEnd
+	:List.GetElem
+	:List.GetNext
+	:List.Print
+
+func Main()
+	t.0 = HeapAllocZ(4)
+	[t.0] = :vmt_LL
+	t.1 = t.0
+	if t.1 goto :null1
+		Error("null pointer")
+	null1:
+	t.2 = [t.1]
+	t.2 = [t.2+0]
+	t.3 = call t.2(t.1)
+	t.4 = t.3
+	PrintIntS(t.4)
+	ret
+
+func Element.Init(this v_Salary v_Married v_Age)
+	t.0 = v_Age
+	t.1 = t.0
+	[this+4] = t.1
+	t.2 = v_Salary
+	t.3 = t.2
+	[this+8] = t.3
+	t.4 = v_Married
+	t.5 = t.4
+	[this+12] = t.5
+	t.0 = 1
+	t.1 = t.0
+	ret t.1
+
+func Element.GetAge(this)
+	t.0 = [this+4]
+	t.1 = t.0
+	ret t.1
+
+func Element.GetSalary(this)
+	t.0 = [this+8]
+	t.1 = t.0
+	ret t.1
+
+func Element.GetMarried(this)
+	t.0 = [this+12]
+	t.1 = t.0
+	ret t.1
+
+func Element.Equal(this other)
+	t.2 = 1
+	t.3 = t.2
+	ret_val = t.3
+	t.4 = other
